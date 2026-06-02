@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta
+    name="description"
+    content="CareerConnect Job Portal Frontend">
+
+<meta
+    name="keywords"
+    content="Jobs, Career, Recruitment, Frontend Project">
+    <title>CareerConnect - Job Portal</title>
+
+    <!-- Bootstrap -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                CareerConnect
+            </a>
+            <a class="nav-link" href="./pages/jobs.html">Jobs</a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse"
+                id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/jobs.html">
+                            Jobs
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/companies.html">
+                            Companies
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/apply.html">
+                            Apply
+                        </a>
+                    </li>
+
+                </ul>
+
+                <button
+    class="btn btn-outline-light"onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Navbar End -->
+
+
+    <!-- Hero Section Start -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="row align-items-center min-vh-100">
+
+                <div class="col-lg-6">
+
+                    <h1 class="display-3 fw-bold mb-3">
+
+                        Find Your
+                        Dream Job Today
+
+                    </h1>
+
+                    <p class="lead mb-4">
+
+                        Explore thousands of job opportunities
+                        from top companies across India.
+
+                    </p>
+                    
+            
+
+                <div class="d-flex gap-3">
+
+    <a
+        href="./pages/jobs.html"
+        class="btn btn-primary btn-lg">
+
+        Find Jobs
+
+    </a>
+
+    <a
+        href="./pages/companies.html"
+        class="btn btn-outline-dark btn-lg">
+
+        Companies
+
+    </a>
+
+</div>
+
+                </div>
+
+
+                <div class="col-lg-6 text-center">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800"
+                        class="img-fluid rounded shadow"
+                        alt="Job Portal">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Search Section Start -->
+
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="row g-3">
+
+            <div class="col-md-8">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    class="form-control"
+                    placeholder="Search jobs...">
+
+            </div>
+
+            <div class="col-md-4">
+
+                <button
+                    class="btn btn-primary w-100"
+                    onclick="searchJobs()">
+
+                    Search
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Search Section End -->
+
+    <!-- Featured Jobs Start -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">
+                Featured Jobs
+            </h2>
+
+            <p class="text-muted">
+                Explore the latest opportunities from top companies.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="card h-100 shadow-sm job-card job-item">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            Frontend Developer
+                        </h5>
+
+                        <p>
+                            Company: TechNova
+                        </p>
+
+                        <p>
+                            Location: Chennai
+                        </p>
+
+                        <p>
+                            Salary: ₹6 LPA
+                        </p>
+
+                        <button class="btn btn-primary w-100">
+                            Apply Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="card h-100 shadow-sm job-card job-item">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            Python Developer
+                        </h5>
+
+                        <p>
+                            Company: Infosys
+                        </p>
+
+                        <p>
+                            Location: Bangalore
+                        </p>
+
+                        <p>
+                            Salary: ₹8 LPA
+                        </p>
+
+                        <button class="btn btn-primary w-100">
+                            Apply Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="card h-100 shadow-sm job-card job-item">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            Full Stack Developer
+                        </h5>
+
+                        <p>
+                            Company: TCS
+                        </p>
+
+                        <p>
+                            Location: Hyderabad
+                        </p>
+
+                        <p>
+                            Salary: ₹7 LPA
+                        </p>
+
+                        <button class="btn btn-primary w-100">
+                            Apply Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 4 -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="card h-100 shadow-sm job-card job-item">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            UI/UX Designer
+                        </h5>
+
+                        <p>
+                            Company: Zoho
+                        </p>
+
+                        <p>
+                            Location: Coimbatore
+                        </p>
+
+                        <p>
+                            Salary: ₹5 LPA
+                        </p>
+
+                        <button class="btn btn-primary w-100">
+                            Apply Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Featured Jobs End -->
+
+<section class="py-5 bg-primary text-white">
+
+    <div class="container">
+
+        <div class="row text-center">
+
+            <div class="col-md-4">
+
+                <h2>10,000+</h2>
+                <p>Active Jobs</p>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <h2>500+</h2>
+                <p>Companies</p>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <h2>50,000+</h2>
+                <p>Candidates</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="py-5">
+
+    <div class="container">
+
+        <h2 class="text-center mb-5">
+            Success Stories
+        </h2>
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <div class="card shadow-sm">
+
+                    <div class="card-body">
+
+                        <p>
+                            "CareerConnect helped me get my first job."
+                        </p>
+
+                        <h5>- Gokul</h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card shadow-sm">
+
+                    <div class="card-body">
+
+                        <p>
+                            "Amazing platform for freshers."
+                        </p>
+
+                        <h5>- Arun</h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card shadow-sm">
+
+                    <div class="card-body">
+
+                        <p>
+                            "Found my dream company within weeks."
+                        </p>
+
+                        <h5>- Priya</h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<button
+    id="topBtn"
+    onclick="scrollToTop()">
+
+    ↑
+
+</button>
+
+    <script src="./js/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-4">
+
+            <h2>Contact Us</h2>
+
+            <p>
+                Have questions? Reach out to us.
+            </p>
+
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-6">
+
+                <form>
+
+                    <div class="mb-3">
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Your Name">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Your Email">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <textarea
+                            class="form-control"
+                            rows="4"
+                            placeholder="Your Message"></textarea>
+
+                    </div>
+
+                    <button
+                        class="btn btn-primary w-100">
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer
+    class="bg-dark text-white py-4">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <h4>
+                    CareerConnect
+                </h4>
+
+                <p>
+                    Connecting Talent with
+                    Opportunities.
+                </p>
+
+            </div>
+
+            <div class="col-md-6 text-md-end">
+
+                <p>
+                    © 2026 CareerConnect
+                </p>
+
+                <p>
+                    All Rights Reserved
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+                <center><p> Developed by Gokul Nath </p></center>
+
+</footer>
+
+</html>

@@ -1,0 +1,106 @@
+body {
+  background-color: #ffffff;
+}
+
+/* Light theme */
+.hero {
+  background: #f8fafc;
+}
+.hero h1 {
+  color: #1e293b;
+}
+.hero p {
+  color: gray;
+}
+
+.job-card {
+  transition: 0.3s;
+}
+.job-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Dark theme overrides */
+.dark-mode {
+  background-color: #0b1220;
+  color: #e5e7eb;
+}
+
+.dark-mode body {
+  background-color: #0b1220;
+  color: #e5e7eb;
+}
+
+.dark-mode .hero {
+  background: #0f172a;
+}
+
+.dark-mode .hero h1 {
+  color: #f8fafc;
+}
+
+.dark-mode .hero p {
+  color: #9ca3af;
+}
+
+.dark-mode .bg-light {
+  background-color: #0f172a !important;
+}
+
+.dark-mode .text-muted {
+  color: #9ca3af !important;
+}
+
+.dark-mode .card,
+.dark-mode .company-card,
+.dark-mode .job-card {
+  background-color: #0f172a;
+  border-color: rgba(255, 255, 255, 0.08);
+  color: #e5e7eb;
+}
+
+.dark-mode .card .text-muted {
+  color: #9ca3af !important;
+}
+
+.dark-mode a {
+  color: #60a5fa;
+}
+
+.dark-mode a:hover {
+  color: #93c5fd;
+}
+
+.dark-mode #topBtn {
+  background: #2563eb;
+  color: #ffffff;
+}/*# sourceMappingURL=style.css.map */
+#topBtn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 55px;
+    height: 55px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #2563eb;
+    color: white;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    z-index: 9999;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+    transition: 0.3s;
+}
+
+#topBtn:hover {
+    transform: translateY(-5px);
+}
